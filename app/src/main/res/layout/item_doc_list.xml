@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_border_radius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/recycleview_bg" />
+
+
+        <TextView
+            android:id="@+id/docName"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="90dp"
+            android:text="DoctorName"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/support" />
+
+        <TextView
+            android:id="@+id/contactNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/docName"
+            android:layout_marginStart="90dp"
+            android:textSize="17sp"
+            android:text="Contact number"
+            android:fontFamily="@font/poppins_light"
+            android:textStyle="bold"
+            />
+
+
+        <RelativeLayout
+            android:id="@+id/call_doc_list_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/symp_btn_shap">
+        <ImageView
+            android:background="@drawable/phonecall"
+            android:layout_centerInParent="true"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

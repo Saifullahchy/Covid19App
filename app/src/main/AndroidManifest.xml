@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.covid_19">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="COVID-19"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".AboutActicity"></activity>
+        <activity android:name=".VolunteerDocSignup.VolunteerDocSignupActivity" />
+        <activity android:name=".myths.MythsActivity" />
+        <activity android:name=".gov_hospital.govHospitalActivity" />
+        <activity
+            android:name=".CountryData.CountryDataActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".CallNationalHelpLine.callNationalHelplineActivity" />
+        <activity android:name=".CallDoctor.CallDoctorActivity" />
+        <activity android:name=".Donation" />
+        <activity android:name=".situation_btn" />
+        <activity android:name=".doc_em_btn" />
+        <activity android:name=".news_activity" />
+        <activity android:name=".landingpage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".homepage" />
+        <activity android:name=".covid_btn" />
+        <activity android:name=".sym_prv_btn" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
